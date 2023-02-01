@@ -28,6 +28,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-20.04
+    permissions:
+      id-token: write
+      contents: write
     steps:
     - uses: actions/checkout@v3
     - name: update
